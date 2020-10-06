@@ -1,7 +1,19 @@
+import React from "react";
+import "./style.css";
+
+export default function App() {
+  return (
+    <div>
+      <h1>Hello StackBlitz!</h1>
+      <p>Start editing to see some magic happen :)</p>
+    </div>
+  );
+}
+
+/*
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <meta charset="UTF-8"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/ico" href="favicon.ico">
   </head>
@@ -33,3 +45,4 @@
     </footer>
   </body>
 </html>
+*/
