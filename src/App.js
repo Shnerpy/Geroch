@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./style.css";
 
 export default function App() {
   return (
     <div>
+      <Helmet>
+        <title>Geroch</title>
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+      </Helmet>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
     </div>
