@@ -1,9 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "./styles/style.css";
-import "./styles/userCodes.css";
+import "./styles/sstyles.css";
 import logo_text from "./images/logo-text.svg";
-import logo from "./images/logo.svg";
 
 export default function App() {
   return (
@@ -11,18 +10,16 @@ export default function App() {
       <Helmet>
         <meta charset="utf-8" />
         <title>Geroch</title>
-        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel='shortcut icon' type='image/x-icon' href="/favicon.ico"/>
       </Helmet>
-      <header>
-        <div class="container">
-          <img src={logo_text} alt='k' style={{width: 200}}/>
-          <ul className="navigation">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
+      <div class="header">
+        <a href="/" class="logo"><img src={logo_text} style={{height: 50}} /></a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
         </div>
-      </header>
+      </div>
       <section>
         <div class="container">
           <h2>Heading Title</h2>
@@ -35,7 +32,9 @@ export default function App() {
       </section>
       <footer>
         <div class="container">
-          <p>@copy 2020. All Right Reserved. Kitsun Ly.</p>
+          <div class="footer-bottom">
+            copyright &#169; <script>document.write(new Date().getFullYear());</script>. All Right Reserved. Kitsun Ly.
+          </div>
         </div>
       </footer>
     </div>
