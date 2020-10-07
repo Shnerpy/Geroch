@@ -8,12 +8,15 @@ export default function App() {
         <a href="/" className="logo"><img src={require("../../images/logo-text.svg")} style={{height: 50}} /></a>
         <div className="header-right">
           <a className="active" href="/">Home</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-          <a href="#magic">Magic</a>
+          <a href="/contact">Contact</a>
+          <a href="/about">About</a>
+          <a href="/magic">Magic</a>
         </div>
       </div>
       <br/>
+      <main>
+        {this.props.children}
+      </main>
       <section>
         <div className="container">
           <h2>Heading Title</h2>
