@@ -1,0 +1,117 @@
+:root{
+  --main-color: #3b5998;
+}
+
+/* General Layout */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #f7f7f7;
+  position: relative;
+  padding-bottom: 58px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Layout */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: middle;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  padding: 0px;
+  padding-left: 12px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header a.logo {
+    padding: 12px;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.resHeader {
+	padding-left: 20px;
+}
+
+/* Section Layout */
+section {
+  color: var(--main-color);
+}
+
+section p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Other */
+
+a .ul {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 3px;
+  transition: .1s all linear;
+}
+
+a .ul:hover {
+  border-bottom: 3px solid white;
+}
+
+/* Footer Layout */
+
+footer {
+  background-color: var(--main-color);
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
