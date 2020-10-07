@@ -1,7 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Helmet from "react-helmet";
 import "./styles/style.css";
-import "./styles/sstyles.css";
 import logo_text from "./images/logo-text.svg";
 
 export default function App() {
