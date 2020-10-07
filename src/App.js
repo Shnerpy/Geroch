@@ -1,18 +1,21 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./style.css";
+import "./styles/style.css";
+import "./styles/userCodes.css";
+import logo_text from "./images/logo-text.svg";
+import logo from "./images/logo.svg";
 
 export default function App() {
   return (
     <div>
       <Helmet>
+        <meta charset="utf-8" />
         <title>Geroch</title>
-        <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico' />
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
       </Helmet>
       <header>
         <div class="container">
-          <img src="https://i.ibb.co/BB6sMkL/kindpng-3268817.png" alt="icon" />
-          <h1>GEROCH</h1>
+          <img src={logo_text} alt='k' style={{width: 200}}/>
           <ul className="navigation">
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>

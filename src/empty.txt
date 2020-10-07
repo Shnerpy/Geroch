@@ -1,0 +1,23 @@
+<div class="navigation-menu">
+<ul class="UserCodes">
+
+<li id="courses">
+<a href="/Courses/">COURSES</a>
+</li>
+<li id="codes">
+<a href="/Codes/">CODE PLAYGROUND</a>
+</li>
+<li id="discuss">
+<a href="/Discuss/">DISCUSS</a>
+</li>
+<li id="leaders">
+<a href="/Leaderboard/">TOP LEARNERS</a>
+</li>
+<li id="blogPage">
+<a href="/Blog/">BLOG</a>
+</li>
+<li class="signin">
+<a href="/Profile/">PROFILE</a>
+</li>
+</ul>
+</div>
