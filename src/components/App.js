@@ -9,7 +9,7 @@ import Magic from './pages/Magic';
 
 const App = () =>(
   <BrowserRouter>
-    <Route path='/' component={MainPage}></Route>
+    <Route path='/' exact component={MainPage}></Route>
     <Route path='/home' component={Home}></Route>
     <Route path='/about' component={About}></Route>
     <Route path='/contact' component={Contact}></Route>
