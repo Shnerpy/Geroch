@@ -1,7 +1,7 @@
 import React from "react";
-import Helmet from "react-helmet";
-import "./styles/style.css";
-import logo_text from "./images/logo-text.svg";
+import { Helmet } from "react-helmet";
+import "App.css";
+import logo_text from "/images/logo-text.svg";
 
 export default function App() {
   return (
@@ -17,6 +17,7 @@ export default function App() {
           <a class="active" href="#home">Home</a>
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
+          <a href="#magic">Magic</a>
         </div>
       </div>
       <br/>
