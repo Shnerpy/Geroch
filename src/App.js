@@ -20,6 +20,7 @@ export default function App() {
           <a href="#about">About</a>
         </div>
       </div>
+      <br/>
       <section>
         <div class="container">
           <h2>Heading Title</h2>
@@ -31,10 +32,8 @@ export default function App() {
         </div>
       </section>
       <footer>
-        <div class="container">
-          <div class="footer-bottom">
-            copyright &#169; <script>document.write(new Date().getFullYear());</script>. All Right Reserved. Kitsun Ly.
-          </div>
+        <div class="footer">
+          Copyright &#169; {new Date().getFullYear()}. All Right Reserved. Kitsun Ly.
         </div>
       </footer>
     </div>
