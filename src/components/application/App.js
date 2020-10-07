@@ -6,10 +6,6 @@ export default function App() {
   document.title="Geroch"
   return (
     <div>
-      <Helmet>
-        <title>Geroch</title>
-        <link rel="shortcut icon" href="/favicon.ico"/>
-      </Helmet>
       <div className="header">
         <a href="/" className="logo"><img src={require("../../images/logo-text.svg")} style={{height: 50}} /></a>
         <div className="header-right">
