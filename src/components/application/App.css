@@ -1,6 +1,11 @@
+:root{
+  --main-color: #3b5998;
+}
+
 /* General Layout */
 * {
-  margin: 0
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,7 +50,7 @@ body {
 }
 
 .header a.active {
-  background-color: #3b5998;
+  background-color: var(--main-color);
   color: white;
 }
 
@@ -75,7 +80,7 @@ body {
 
 /* Section Layout */
 section {
-  color: #3b5998;
+  color: var(--main-color);
 }
 
 section p {
@@ -87,22 +92,23 @@ section p {
 
 a .ul {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: bold;
   padding-bottom: 3px;
   transition: .1s all linear;
 }
 
 a .ul:hover {
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid white;
 }
 
 /* Footer Layout */
+
 footer {
-  background-color: #3b5998;
+  background-color: var(--main-color);
   font-size: 12px;
   text-align: center;
-  color: #fff;
+  color: white;
   padding-top: 20px;
   padding-bottom: 20px;
   position: absolute;

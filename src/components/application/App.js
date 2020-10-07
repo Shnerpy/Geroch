@@ -7,10 +7,10 @@ export default function App() {
     <div>
       <Helmet>
         <title>Geroch</title>
-        <link rel='shortcut icon' type='image/x-icon' href="/favicon.ico"/>
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
       </Helmet>
       <div className="header">
-        <a href="/" className="logo"><img src={require('../../../images/logo-text.svg')} style={{height: 50}} /></a>
+        <a href="/" className="logo"><img src={require("../../../public/images/logo-text.svg")} style={{height: 50}} /></a>
         <div className="header-right">
           <a className="active" href="/">Home</a>
           <a href="#contact">Contact</a>
