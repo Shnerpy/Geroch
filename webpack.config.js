@@ -1,7 +1,8 @@
-function page(page) {`./src/components/pages/${page}/index.js`}
-
-export const entry = {
-  home: page('home'),
-  contact: page('contact'),
-  about: page('about')
-};
+plugins: [
+  new CopyWebpackPlugin({ 
+    patterns: [ 
+     // relative path is from src
+     { from: './static/favicon.ico' }, // <- your path to favicon
+    ]
+ })
+]
