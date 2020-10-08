@@ -39,7 +39,7 @@ body {
   border-radius: 4px;
 }
 
-.header a.logo {
+.header .logo {
   padding: 0px;
   padding-left: 12px;
 }
@@ -65,8 +65,9 @@ body {
     text-align: left;
   }
 
-  .header a.logo {
-    padding: 12px;
+  .header .logo {
+    padding-left: 0px;
+    padding-bottom: 12px
   }
   
   .header-right {

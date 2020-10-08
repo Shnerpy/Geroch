@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div>
       <div className="header">
-        <a href="/" className="logo"><img src={require("../../images/logo-text.svg")} style={{height: 50}} /></a>
+        <img src={require("../../images/logo-text.svg")} className="logo"  style={{height: 50}}/>
         <div className="header-right">
-          <NavLink activeClassName="active" to="/Home">Home</NavLink>
+          <NavLink activeClassName="active" to="/">Home</NavLink>
           <NavLink activeClassName="active" to="/contact">Contact</NavLink>
           <NavLink activeClassName="active" to="/about">About</NavLink>
           <NavLink activeClassName="active" to="/magic">Magic</NavLink>
