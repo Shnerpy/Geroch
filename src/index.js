@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './components/App'
 
 ReactDOM.render((
-  <div>
+  <div className="Main">
     <Favicon url="shorturl.at/qART4"/>
     <Router>
       <App />

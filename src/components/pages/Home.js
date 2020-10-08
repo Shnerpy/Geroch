@@ -1,35 +1,29 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../style.css";
+import Header from "../sections/header"
+import Footer from "../sections/footer"
 
 export default function Home() {
-  return (
-    <div>
-      <div className="header">
-        <img src={require("../../images/logo-text.svg")} className="logo"  style={{height: 50}}/>
-        <div className="header-right">
-          <NavLink activeClassName="active" to="/">Home</NavLink>
-          <NavLink activeClassName="active" to="/contact">Contact</NavLink>
-          <NavLink activeClassName="active" to="/about">About</NavLink>
-          <NavLink activeClassName="active" to="/magic">Magic</NavLink>
-        </div>
+  return (<>
+    <Header />
+    <section>
+      <div className="container">
+        <h2>Heading Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante metus, bibendum sed euismod efficitur,
+          laoreet at massa. Mauris sit amet iaculis diam, eu accumsan eros. Vivamus commodo ac est a eleifend. Nunc
+          consequat tincidunt orci, at tincidunt tellus bibendum eu. Sed ac eros enim. Praesent efficitur ipsum
+          tortor, sit amet elementum lacus sollicitudin et. Sed ornare euismod ligula et venenatis.
+        </p>
       </div>
-      <br/>
-      <section>
-        <div className="container">
-          <h2>Heading Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante metus, bibendum sed euismod efficitur,
-            laoreet at massa. Mauris sit amet iaculis diam, eu accumsan eros. Vivamus commodo ac est a eleifend. Nunc
-            consequat tincidunt orci, at tincidunt tellus bibendum eu. Sed ac eros enim. Praesent efficitur ipsum
-            tortor, sit amet elementum lacus sollicitudin et. Sed ornare euismod ligula et venenatis.
-          </p>
-        </div>
-      </section>
-      <footer>
-        <div className="footer">
-          Copyright &#169; {new Date().getFullYear()}. All Right Reserved. Kitsun Ly.
-        </div>
-      </footer>
-    </div>
-  );
+    </section>
+    <Footer />
+  </>);
 }
+
+{/*
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+*/}
